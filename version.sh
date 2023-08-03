@@ -41,8 +41,8 @@ toolchain="gcc_8_arm"
 
 #Kernel
 KERNEL_REL=4.19
-KERNEL_TAG=${KERNEL_REL}.280
-kernel_rt=".280-rt123"
+KERNEL_TAG=${KERNEL_REL}.288
+kernel_rt=".284-rt125"
 #Kernel Build
 BUILD=${build_prefix}76
 

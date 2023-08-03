@@ -517,23 +517,23 @@ patch_backports (){
 }
 
 backports () {
-	backport_tag="v4.19.282"
+	#backport_tag="v4.19.282"
 
-	subsystem="iio"
+	#subsystem="iio"
 	#regenerate="enable"
-	if [ "x${regenerate}" = "xenable" ] ; then
-		pre_backports
+	#if [ "x${regenerate}" = "xenable" ] ; then
+	#	pre_backports
 
-		cp -rv ~/linux-src/include/linux/iio/* ./include/linux/iio/
-		cp -rv ~/linux-src/include/uapi/linux/iio/* ./include/uapi/linux/iio/
-		cp -rv ~/linux-src/drivers/iio/* ./drivers/iio/
-		cp -rv ~/linux-src/drivers/staging/iio/* ./drivers/staging/iio/
+	#	cp -rv ~/linux-src/include/linux/iio/* ./include/linux/iio/
+	#	cp -rv ~/linux-src/include/uapi/linux/iio/* ./include/uapi/linux/iio/
+	#	cp -rv ~/linux-src/drivers/iio/* ./drivers/iio/
+	#	cp -rv ~/linux-src/drivers/staging/iio/* ./drivers/staging/iio/
 
-		post_backports
-		exit 2
-	else
-		patch_backports
-	fi
+	#	post_backports
+	#	exit 2
+	#else
+	#	patch_backports
+	#fi
 
 	backport_tag="v5.4.242"
 
