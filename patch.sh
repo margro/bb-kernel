@@ -642,12 +642,17 @@ fixes () {
 	dir 'fixes/gcc'
 }
 
+ipipe () {
+	dir 'ipipe'
+}
+
 ###
 backports
 reverts
 drivers
 soc
 fixes
+ipipe
 
 packaging () {
 	do_backport="enable"
