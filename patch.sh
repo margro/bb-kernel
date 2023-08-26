@@ -646,6 +646,11 @@ ipipe () {
 	dir 'ipipe'
 }
 
+xenomai () {
+	dir 'xenomai'
+}
+
+
 ###
 backports
 reverts
@@ -653,6 +658,7 @@ drivers
 soc
 fixes
 ipipe
+xenomai
 
 packaging () {
 	do_backport="enable"
